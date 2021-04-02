@@ -5,14 +5,14 @@ var gari=Car("Subaru","legacy","white",14)
     println(gari.calculateParkingFees(5))
 
     var bus=Bus("citi hoppa","benz","green",54)
-      println(bus.maxTripFare(50.20))
+      println(bus.maxTripFare(100.toDouble()))
     println(bus.calculateParkingFees(7))
 }
 
 
  open class Car(var make:String,var model:String,var color:String,var capacity:Int) {
     fun carry(people: Int) {
-        var x = people - capacity
+        var x = people -capacity
         if (people <= capacity) {
             println("carrying $people passengers")
         } else {
